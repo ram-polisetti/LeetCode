@@ -1,6 +1,6 @@
 # Introduction
 
-This repository contains my solutions to the "Grind 75" LeetCode problems as outlined by the Tech Interview Handbook. These problems are curated to prepare for technical interviews and are solved over 5 weeks. [Access the Link here!](https://www.techinterviewhandbook.org/grind75?weeks=5)
+This repository contains solutions(Neetcode) to the "Grind 75" LeetCode problems as outlined by the Tech Interview Handbook. These problems are curated to prepare for technical interviews and are solved over 5 weeks. [Access the Link here!](https://www.techinterviewhandbook.org/grind75?weeks=5)
 
 # Grind 75 LeetCode Problems
 
