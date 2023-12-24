@@ -5,12 +5,28 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
-        longer_string = s if len(s) > len(t) else t
-        smaller_string = t if len(t) < len(s) else s
-        for char in longer_string:
-            if char in smaller_string:
-                smaller_string = smaller_string.replace(char, '', 1)
-            else:
+#         if len(s) != len(t):
+#             return False
+#         for char in s:
+#             if char in t:
+#                 t = t.replace(char, '', 1)
+#             else:
+#                 return False
+        
+#         return True
+        
+        countS = {}
+        countT = {}
+        
+        if len(s) != len(t):
+            return False
+        for i in range(len(s)):
+            countS[s[i]] = 1 + countS.get(s[i], 0)
+            countT[t[i]] = 1 + countT.get(t[i], 0)
+            
+        for char in countS:
+            if countS[char] != countT.get(char, 0):
                 return False
         
         return True
+            
