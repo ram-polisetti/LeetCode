@@ -4,16 +4,12 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
+        n= len(nums)
+        sum_numbers = n*(n+1)/2
+        sum = 0
 
-        max_ele = max(nums)
-        min_ele = min(nums)
-        if min_ele !=0:
-            return 0
-        # print(max_ele, min_ele)
-        for i in range(min_ele, max_ele+1):
-            # print(i)
-            if i not in nums:
-                # print(i)
-                return i
-        return max_ele+1
-                
+        for ele in nums:
+            sum += ele
+
+        return sum_numbers - sum
+
