@@ -15,11 +15,11 @@ class Solution(object):
                 mag_chars[char] += 1
             else:
                 mag_chars[char] = 1
-        print(mag_chars)
+        # print(mag_chars)
         for char in ransomNote:
             if char in mag_chars:
                 mag_chars[char] -= 1
-                print(mag_chars)
+                # print(mag_chars)
                 if mag_chars[char] <0:
                     return False
             else:
