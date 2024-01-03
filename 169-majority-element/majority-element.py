@@ -16,6 +16,21 @@ class Solution(object):
         # return maj_ele
 
 
-        nums.sort()
-        n = len(nums)//2
-        return nums[n]
+        # nums.sort()
+        # n = len(nums)//2
+        # return nums[n]
+
+        count = 0
+        maj_can = 0
+        for ele in nums:
+            if count ==0:
+                maj_can = ele
+            
+            if ele == maj_can:
+                count += 1
+            elif count == 0:
+                maj_can = ele
+            else:
+                count -= 1
+
+        return maj_can
